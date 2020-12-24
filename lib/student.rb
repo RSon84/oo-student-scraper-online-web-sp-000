@@ -14,7 +14,7 @@ class Student
     @@all << self
   end
 
-  def self.create_from_collection(student_index_array)
+  def self.create_from_collection(students_array)
     student_index_array.each do |student_hash|
       Student.new(student_hash)
     end
